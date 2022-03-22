@@ -1,0 +1,139 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}CV{% endblock %}
+{% block content %}
+
+<aside>
+    
+    <img src="{% static 'main/img/me.jpg'%}" alt="foto" width="100%">
+    <span class="foto"></span>
+       
+    <div>
+        <h2>Contacts</h2>
+        <h3>Lviv, Ukraine</h3>
+        <ol>
+            <li>
+                <i class="bi bi-phone-vibrate"></i> <a href="tel:+380932142407">+380932142407</a> 
+            </li> 
+            <li>
+                <i class="bi bi-envelope"></i> <a href="mailto:viktor.melnik@gmail.com">viktor.melnik@gmail.com</a>
+            </li>
+        </ol>
+        <h3>Tech skills</h3>  
+        <ul>
+            <li>Python 3.9</li>
+            <li>Django 4</li>
+            <li>HTML 5, CSS 3</li>
+            <li>PyQt 5, 6</li> 
+            <li>GIT 2.35</li>
+            <li>VSCod, PyCharm</li>
+            <li>SQLite 3</li>
+        </ul>
+        <h3>Soft skills</h3>
+        <ul>
+            <li>ability to work in a team</li>
+            <li>punctuality</li>
+            <li>balance</li>
+        </ul>
+    <div class="ukrain"><img src="{% static 'main/img/ukrain.png' %}" alt="Ukrain"></div>
+        
+    </div>
+
+</aside>
+<div class="maine_section_1">
+    
+    <!--about me section-->
+    <div class="about-me">
+
+    <h3 class="about-my-proffesion">Python developer</h3> 
+    <h1 class="Me">Melnik Viktor</h1> 
+        <p class="About_Me">I like the Python programming language, I want it to become a profession from a hobby </p>
+         
+                        
+    </div>
+    <!--My projects section-->
+    <div class="My-projects">
+        <h3>Projects
+            <button type="button" class="btn btn-primary btn-circle">
+                <i class="fas fa-map"></i> 
+                <a  target="_blank" href='http://127.0.0.1:8000/news'><b>My works</b></a>
+                </button>
+            </h3>
+        <table width="95%" height='30px'>
+            <tr>
+                <td>1. <i class="bi bi-youtube"></i> Youtube downloader</td>
+                <td><a target='_blank' href="https://github.com/ViktorMelnik/Youtube_downloader"><i class="bi bi-github"></i> Github.com</a></td>
+                <td>[ PyQt 5 ]</td>
+            </tr>
+            <tr>
+                <td>2. <i class="bi bi-card-checklist"></i> Notepad app</td>
+                <td><a target="_blank" href="https://github.com/ViktorMelnik/Notepad_app"><i class="bi bi-github"></i> Github.com</a></td>
+                <td>[ PyQt 5 ]</td>
+            </tr>
+            <tr>
+                <td>3. <i class="bi bi-currency-exchange"></i> Exchange app</td>
+                <td><a target="_blank" href="https://github.com/ViktorMelnik/Excange"><i class="bi bi-github"></i> Github.com</a></td>
+                <td>[ PyQt 5 ]</td>
+            </tr>
+            <tr>
+                <td>4. <i class="bi bi-123"></i> Converter app</td>
+                <td><a target="_blank" href="https://github.com/ViktorMelnik/Converter"><i class="bi bi-github"></i> Github.com</a></td>
+                <td>[ PyQt 5 ]</td>
+            </tr>
+            <tr>
+                <td>5. <i class="bi bi-calculator"></i> Calculator app</td>
+                <td><a target="_blank" href="https://github.com/ViktorMelnik/Calc"><i class="bi bi-github"></i> Github.com</a></td>
+                <td>[ PyQt 5 ]</td>
+            </tr>
+            <tr>
+                <td>6. <i class="bi bi-box-arrow-in-right"></i> Autorization app</td>
+                <td><a target="_blank" href="https://github.com/ViktorMelnik/Autorization_app"><i class="bi bi-github"></i> Github.com</a></td>
+                <td>[ SQLite 3 ]</td>
+            </tr>
+            <tr>
+                <td>7. <i class="bi bi-globe"></i> CV site</td>
+                <td><i class="bi bi-github"></i></td>
+                <td>[ Django 4 ]</td>
+            </tr>
+        </table>
+        
+    <!--My work experience section-->
+    <div class="My-work">
+        <h3>Work Experience</h3>
+        <!--Company 3-->
+        <div>
+            <h4>Ltd Realcar group <a target="_blank" href="https://realcar.com.ua/">https://realcar.com.ua/</a></h4>
+            <h4>Car sales manager</h4>
+            <p>May 2020 - up to now | Country</p>
+            <ul>
+            <li>selectionб sale and organization of delivery of cars from the USA</li> 
+             
+            </ul>
+        </div>
+        <!--Company 3-->
+        <div>
+            <h4>Ltd "Дальта" <a target="_blank" href="http://dalta.lviv.ua/">http://dalta.lviv.ua/</a></h4>
+
+            <h4>Head of sales department</h4>
+            <p>October 2018 - May 2020 | Country</p>
+
+            <ul>
+            <li>sale of industrial metal structures to construction organizations</li>
+            <li>organization of marketing activities for sale to private customers</li>
+            
+
+            </ul>
+        </div>         
+
+    </div>
+    </div>
+    <!--My educftion-->
+    <div class="My-education">
+        <h3>Educacion</h3>
+        <h4>National University "Lviv Polytechnic"</h4>
+        <h5>Faculty of Electrophysics. Department of Laser technology and optoelectronic systems</h5>
+        <h4>Sales trainings</h4>
+    </div>
+</div>   
+
+{% endblock %} 

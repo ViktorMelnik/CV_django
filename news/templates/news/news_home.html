@@ -1,0 +1,21 @@
+{% extends 'news/layout.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<h1 class="h1"><a target="_blank" alt='icon_home' href="http://127.0.0.1:8000/"><i class="bi bi-house-fill"></i></i></a> My projects</h1>
+{% if news %}
+    {% for el in news %}
+        <div class="project">
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.anons }}</p>
+            <p>{{ el.full_text }}</p>
+            <img src="{{ el.img }}">
+        </div>
+    {% endfor %}
+{% else %}
+        <p>there are no projects</p>
+{% endif %}
+
+{% endblock %} 

@@ -1,0 +1,87 @@
+body {
+    background: beige;
+    margin-left: 15px;
+    
+}
+.maine_section_1 {
+    padding-left: 25%;
+    
+}
+.project-item {
+    transition: all .5s ease;
+}
+.project-item:hover {
+    display: block;
+    color: rgb(155, 25, 25);
+    text-decoration: none;
+    transform: scale(1.10);
+}
+aside {
+    float: left;
+    background: rgb(168, 160, 127);
+    width: 24%;
+    height: 100%;
+    color: #000;
+}
+
+.photo {
+    float: left;
+}
+aside {
+    display: block;
+}
+
+aside div {
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+aside ol {list-style: none;}
+    
+aside ol li {
+    display: block;
+    margin-top: 10px;
+    transition: all .5s ease;
+}
+aside ol li:hover, aside ul a:hover {
+    color: rgb(155, 25, 25);
+    text-decoration: none;
+    transform: scale(1.10);
+}
+aside ul {
+    margin: 5px;
+}
+.ukrain {
+    padding-left: 70px;
+    padding-top: 30px;
+    transition: transform .5s ease;
+}
+.ukrain:hover {
+    transform: scale(1.20);
+}
+.btn-circle {
+    width: 58px;
+    height: 58px;
+    border-radius: 29px;
+    text-align: center;
+    margin-left: 65%;
+    background: rgb(168, 160, 127);
+}
+.icon_home {margin-left: 100px;}
+
+main .features {
+    color:rgb(168, 160, 127);
+    background: rgb(168, 160, 127);
+}
+.h1 {
+    padding-left: 20px;
+}
+.project {
+    background: rgb(168, 160, 127);
+    margin: 1%;
+    padding-left: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 10px;
+}

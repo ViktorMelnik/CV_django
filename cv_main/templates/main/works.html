@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+{% block title %}Works{% endblock %}
+{% block content %}
+    <a alt='icon_home' href="http://127.0.0.1:8000/"><i class="bi bi-house-fill"></i></i></a>
+    <span class="icon_home"></span> 
+    <h1>My projects</h1>
+    <ul>
+        <li>
+            
+            <p>Notepad app|upper</p>
+            <p>Notepad app</p>
+            
+        </li>
+        
+    </ul>
+    {% for i in valus %}
+        {% if i == 'Hello' %}
+            <p>{{i|upper}}</p>
+        {% endif %}
+    {% endfor %}
+    {{obj}}  
+{% endblock %}
